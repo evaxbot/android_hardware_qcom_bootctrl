@@ -541,9 +541,6 @@ int set_active_boot_slot(struct boot_control_module *module, unsigned slot)
 		if (is_ufs && (!strncmp(ptn_list[i],
 						PTN_XBL,
 						strlen(PTN_XBL))
-					|| !strncmp(ptn_list[i],
-						PTN_XBL_CFG,
-						strlen(PTN_XBL_CFG))))
 				continue;
 		//The partition list will be the list of _a partitions
 		string cur_ptn = ptn_list[i];
